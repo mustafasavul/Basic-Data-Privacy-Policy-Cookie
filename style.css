@@ -1,0 +1,425 @@
+/* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Cookie Styles */
+
+.cookie-band {
+  background: #aeaeae;
+  font-size: 13px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-band--bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.cookie-band--top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.cookie-band__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 85px;
+}
+
+.cookie-band__btn {
+  text-align: center;
+}
+
+.cookie-band__btn:hover,
+.cookie-band__btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cookie-band.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-band-read {
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookie-band-read:hover {
+  opacity: .9;
+  color: #ffffff;
+}
+
+.cookie-band-read--red {
+  color: #ee2d31;
+}
+
+.cookie-band-read--red:hover {
+  color: #ffffff;
+}
+
+.cookie-band-read--dark-red {
+  color: #c41d24;
+}
+
+.cookie-band-read--dark-red:hover {
+  color: #ffffff;
+}
+
+.cookie-band-read--orange {
+    color: #F7800A;
+}
+
+.cookie-band-read--yellow {
+    color: #F7B219;
+}
+
+/* Bar Backgrounds */
+.cookie-bg--black {
+  background-color: rgba(30, 30, 30, 0.95);
+}
+
+.cookie-bg--open-black {
+  background-color: rgba(17, 17, 17, 0.9);
+}
+
+.cookie-bg--red {
+  background-color: rgba(211, 52, 61, 0.9);
+}
+
+.cookie-bg--gray {
+  background-color: rgba(35, 32, 32, 0.9);
+}
+
+.cookie-bg--soft-gray {
+  background-color: rgba(34, 34, 34, 0.9);
+}
+
+.cookie-bg--blue {
+  background-color: rgba(13, 68, 114, 0.9);
+}
+
+/* Bar Texts */
+.cookie-band__text {
+  color: #ffffff;
+}
+
+.cookie-band__text--cis {
+  font-family: "Titillium Web";
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.cookie-band__text--kinesis {
+  font-family: Ubuntu;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cookie-band__text--brisa {
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.cookie-band__text--dayton {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cookie-band__text--academy {
+  height: 22px;
+  width: 895px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.cookie-band__text--lassa {
+  color: #ffffff;
+  font-family: "Teuton Mager";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cookie-band__text--otopratik {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cookie-band__text--propratik {
+  font-family: "GravostyleTR Basic";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cookie-band__text--lastik {
+  font-family: Ubuntu;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cookie-band__text--lassa-global {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* Ipad Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .cookie-band__text {
+    width: 90%;
+  }
+
+  .cookie-band__btn {
+    width: 10%;
+  }
+}
+
+/* Ipad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .cookie-band__text {
+    width: 80%;
+  }
+
+  .cookie-band__btn {
+    width: 20%;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+  .cookie-band__inner {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  .cookie-band__text {
+    width: 85%;
+  }
+
+  .cookie-band__btn {
+    width: 15%;
+  }
+}
+
+/* BS Container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

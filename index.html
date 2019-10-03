@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic Cookie Bar</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div
+        class="cookie-band cookie-band--bottom cookie-bg--black"
+        id="cookieBand"
+      >
+        <div class="container">
+          <div class="cookie-band__inner">
+            <div class="cookie-band__text">
+              Our website uses cookies to analyse our traffic and measure the
+              effectiveness of the campaigns. For more information on the use of
+              cookies please read our
+              <a
+                href="javascript:;"
+                class="cookie-band-read cookie-band-read--red"
+                >Privacy Policy.</a
+              >
+              Please note that you can change your cookie options at any time
+              via your browser settings.
+            </div>
+            <a href="javascript:;" data-role="cookie" class="cookie-band__btn">
+                <img src="assets/cookie-close.svg" alt="Close Cookie" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
+    <script src="app/ui.js"></script>
+  </body>
+</html>
